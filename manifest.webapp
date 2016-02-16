@@ -1,0 +1,29 @@
+{
+    "version": "1.0",
+    "name": "NHM-App",
+    "description": "",
+    "icons": {
+        "16": "/view/img/icons/app-16.png",
+        "48": "/view/img/icons/app-48.png",
+        "128": "/view/img/icons/app-128.png"
+    },
+    "developer": {
+        "url": "http://dhis2.org",
+        "name": "HISP",
+        "company": null,
+        "email": null
+    },
+    "activities": {
+        "dhis": {
+            "href": "http://localhost:8080/dhis",
+            "namespace": null
+        }
+    },
+    "folderName": null,
+    "baseUrl": null,
+    "launchUrl": null,
+    "key": null,
+    "launch_path": "index.html#/dummy",
+    "installs_allowed_from": null,
+    "default_locale": "en"
+}
