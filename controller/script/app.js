@@ -18,7 +18,7 @@ var testApp = angular.module('testApp', [
 
     .config(function( $routeProvider, $translateProvider ) {
       $routeProvider.when('/', {
-        templateUrl: 'view/home.html',
+        templateUrl: 'view/pages/home.html',
         controller: 'HomeController'
       }).otherwise({
         redirectTo: '/'

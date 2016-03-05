@@ -1,72 +1,79 @@
 <!DOCTYPE html>
-<html ng-app="testApp">
+<html>
 <head lang="en">
-  <meta charset="UTF-8">
-  <title>Test app</title>
+    <meta charset="UTF-8">
+    <title>Test app</title>
 
-  <script type="text/javascript" src="controller/lib/jQuery/jquery.min.js"></script>
-  <script type="text/javascript" src="controller/lib/jQuery/ui/jquery-ui.min.js"></script>
-  <script type="text/javascript" src="controller/lib/jQuery/jquery.plugin.min.js"></script>
-  <script type="text/javascript" src="controller/lib/jQuery/jquery.tmpl.js"></script>
-  <script type="text/javascript" src="controller/lib/jQuery/calendars/jquery.calendars.min.js"></script>
-  <script type="text/javascript" src="controller/lib/jQuery/calendars/jquery.calendars.picker.min.js"></script>
-  <script type="text/javascript" src="controller/lib/moment/moment-with-langs.min.js"></script>
+    <script type="text/javascript" src="controller/lib/jQuery/jquery.min.js"></script>
+    <script type="text/javascript" src="controller/lib/jQuery/ui/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="controller/lib/jQuery/jquery.plugin.min.js"></script>
+    <script type="text/javascript" src="controller/lib/jQuery/jquery.tmpl.js"></script>
+    <script type="text/javascript" src="controller/lib/jQuery/calendars/jquery.calendars.min.js"></script>
+    <script type="text/javascript" src="controller/lib/jQuery/calendars/jquery.calendars.picker.min.js"></script>
+    <script type="text/javascript" src="controller/lib/moment/moment-with-langs.min.js"></script>
 
-  <script type="text/javascript" src="controller/lib/bootstrap/js/bootstrap.min.js"></script>
-  <link type="text/css" rel="stylesheet" href="controller/lib/bootstrap/css/bootstrap.min.css">
+    <script type="text/javascript" src="controller/lib/bootstrap/js/bootstrap.min.js"></script>
+    <link type="text/css" rel="stylesheet" href="controller/lib/bootstrap/css/bootstrap.min.css">
 
-  <script type="text/javascript" src="controller/lib/angular/angular.js"></script>
-  <script type="text/javascript" src="controller/lib/angular/angular-resource.js"></script>
-  <script type="text/javascript" src="controller/lib/angular/angular-route.js"></script>
-  <script type="text/javascript" src="controller/lib/angular/angular-cookies.js"></script>
-  <script type="text/javascript" src="controller/lib/angular/angular-animate.js"></script>
-  <script type="text/javascript" src="controller/lib/angular/angular-messages.js"></script>
-  <script type="text/javascript" src="controller/lib/angular/angular-sanitize.js"></script>
-  <script type="text/javascript" src="controller/lib/angular/ui-bootstrap-tpls-0.14.0.js"></script>
-  <script type="text/javascript" src="controller/lib/angular/plugins/angular-translate.min.js"></script>
+    <script type="text/javascript" src="controller/lib/angular/angular.js"></script>
+    <script type="text/javascript" src="controller/lib/angular/angular-resource.js"></script>
+    <script type="text/javascript" src="controller/lib/angular/angular-route.js"></script>
+    <script type="text/javascript" src="controller/lib/angular/angular-cookies.js"></script>
+    <script type="text/javascript" src="controller/lib/angular/angular-animate.js"></script>
+    <script type="text/javascript" src="controller/lib/angular/angular-messages.js"></script>
+    <script type="text/javascript" src="controller/lib/angular/angular-sanitize.js"></script>
+    <script type="text/javascript" src="controller/lib/angular/ui-bootstrap-tpls-0.14.0.js"></script>
+    <script type="text/javascript" src="controller/lib/angular/plugins/angular-translate.min.js"></script>
+    <script type="text/javascript" src="controller/lib/angular/plugins/angularLocalStorage.js"></script>
 
-  <script type="text/javascript" src="controller/lib/commons/dhis2.util.js"></script>
-  <script type="text/javascript" src="controller/lib/commons/commons.js"></script>
-  <script type="text/javascript" src="controller/lib/commons/commons.ajax.js"></script>
-  <script type="text/javascript" src="controller/lib/commons/ouwt/ouwt.js"></script>
+    <script type="text/javascript" src="controller/lib/commons/dhis2.util.js"></script>
+    <script type="text/javascript" src="controller/lib/commons/commons.js"></script>
+    <script type="text/javascript" src="controller/lib/commons/commons.ajax.js"></script>
+    <!--<script type="text/javascript" src="controller/lib/commons/ouwt/ouwt.js"></script>-->
 
-  <script type="text/javascript" src="controller/lib/commons/dhis2.angular.filters.js"></script>
-  <script type="text/javascript" src="controller/lib/commons/dhis2.angular.directives.js"></script>
-  <script type="text/javascript" src="controller/lib/commons/dhis2.angular.services.js"></script>
+    <script type="text/javascript" src="controller/lib/commons/dhis2.angular.filters.js"></script>
+    <script type="text/javascript" src="controller/lib/commons/dhis2.angular.directives.js"></script>
+    <script type="text/javascript" src="controller/lib/commons/dhis2.angular.services.js"></script>
 
-  <script type="text/javascript" src="controller/lib/commons/dhis2.storage.ss.js"></script>
-  <script type="text/javascript" src="controller/lib/commons/dhis2.storage.ls.js"></script>
-  <script type="text/javascript" src="controller/lib/commons/dhis2.storage.idb.js"></script>
-  <script type="text/javascript" src="controller/lib/commons/dhis2.storage.memory.js"></script>
-  <script type="text/javascript" src="controller/lib/commons/dhis2.storage.js"></script>
+    <script type="text/javascript" src="controller/lib/commons/dhis2.storage.ss.js"></script>
+    <script type="text/javascript" src="controller/lib/commons/dhis2.storage.ls.js"></script>
+    <script type="text/javascript" src="controller/lib/commons/dhis2.storage.idb.js"></script>
+    <script type="text/javascript" src="controller/lib/commons/dhis2.storage.memory.js"></script>
+    <script type="text/javascript" src="controller/lib/commons/dhis2.storage.js"></script>
 
-  <script type="text/javascript" src="controller/lib/commons/dhis2.translate.js"></script>
-  <script type="text/javascript" src="controller/lib/commons/dhis2.menu.js"></script>
-  <script type="text/javascript" src="controller/lib/commons/dhis2.menu.ui.js"></script>
-  <script type="text/javascript" src="controller/lib/commons/dhis2.validation.js"></script>
+    <script type="text/javascript" src="controller/lib/commons/dhis2.translate.js"></script>
+    <script type="text/javascript" src="controller/lib/commons/dhis2.menu.js"></script>
+    <script type="text/javascript" src="controller/lib/commons/dhis2.menu.ui.js"></script>
+    <script type="text/javascript" src="controller/lib/commons/dhis2.validation.js"></script>
 
+    <script type="text/javascript" src="controller/lib/w2ui/jquery.min.v2.1.0.js"></script>
+    <script type="text/javascript" src="controller/lib/w2ui/w2ui-1.4.2.min.js"></script>
+    <link type="text/css" rel="stylesheet" media="screen" href="controller/lib/w2ui/w2ui-1.4.2.min.css">
 
-  <script type="text/javascript" src="controller/lib/angular/plugins/angularLocalStorage.js"></script>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="controller/lib/html5/html5shiv.js"></script>
+    <script type="text/javascript" src="controller/lib/html5/respond.min.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" media="screen" href="controller/lib/commons/css/menu.css">
+    <link type="text/css" rel="stylesheet" media="screen" href="controller/lib/commons/css/widgets.css">
+    <link type="text/css" rel="stylesheet" href="controller/lib/commons/font-awesome/css/font-awesome.min.css"/>
 
-  <link type="text/css" rel="stylesheet" media="screen" href="controller/lib/commons/css/menu.css">
-  <link type="text/css" rel="stylesheet" media="screen" href="controller/lib/commons/css/widgets.css">
-  <link type="text/css" rel="stylesheet" href="controller/lib/commons/font-awesome/css/font-awesome.min.css"/>
+    <link type="text/css" rel="stylesheet" media="screen" href="view/css/style.css">
 
-
-  <link type="text/css" rel="stylesheet" media="screen" href="view/css/style.css">
-
-
-  <script type="text/javascript" src="controller/script/app.js"></script>
-
-  <script type="text/javascript" src="controller/script/home_controller.js"></script>
-  <script type="text/javascript" src="controller/script/promise_helper.js"></script>
-  <script type="text/javascript" src="controller/script/measure_performance.js"></script>
-
+    <script type="text/javascript" src="controller/script/promise_helper.js"></script>
+    <script type="text/javascript" src="controller/script/measure_performance.js"></script>
+    <script type="text/javascript" src="controller/script/app.js"></script>
 </head>
-<body>
+<body ng-app="testApp">
 <d2-header-bar></d2-header-bar>
 
 <div ng-view></div>
 
 </body>
+
+<script type="text/javascript" src="controller/script/home_controller.js"></script>
+
+
 </html>
