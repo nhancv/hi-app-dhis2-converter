@@ -1,7 +1,5 @@
-testApp
-    .controller('HomeController', function ($rootScope,
-                                            $scope,
-                                            $location) {
+testApp.service('HomeService', function(){
+    this.validateForm=function (){
         $('#frInput').validate({
             rules: {
                 ipDataset: {
@@ -32,6 +30,18 @@ testApp
             }
         });
 
+    }
 
+});
 
+testApp.controller('HomeController', function ($rootScope,
+                                            $scope,
+                                            $location, HomeService) {
+    $scope.$on('$viewContentLoaded', function(){
+        HomeService.validateForm();
     });
+
+
+
+
+});
