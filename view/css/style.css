@@ -3,10 +3,14 @@ html, body {
   margin: 0;
   padding: 0;
   background-color: white;
-  font-size: 10pt; }
+  font-size: 10pt;
+  color: #000; }
 
 #home-page {
   margin: 65px 10px 10px 30px; }
+  #home-page .panel.panel-default {
+    width: 500px;
+    margin: auto; }
 
 #header-page {
   margin: 65px 5px 15px 35px; }

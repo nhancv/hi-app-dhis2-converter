@@ -1,4 +1,28 @@
-
 <div id="home-page" ng-controller="HomeController">
-  <div id="layout" style="width: 100%; height: 400px;"></div>
+
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <form id="frInput" class="form-horizontal" role="form">
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="ipDataset">Dataset:</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" name="ipDataset" id="ipDataset">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="ipPeriod">Period:</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" name="ipPeriod" id="ipPeriod">
+                    </div>
+                </div>
+                <div class="col-sm-offset-2 col-sm-10">
+                    <button type="submit" class="btn btn-default" name="btnPreview">Preview</button>
+                    <button type="submit" class="btn btn-default" name="btnDownload">Dowload</button>
+                    <button type="submit" class="btn btn-default" name="btnPush">Push</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
 </div>

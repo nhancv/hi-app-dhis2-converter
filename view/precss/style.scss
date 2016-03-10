@@ -4,11 +4,10 @@ html, body {
   padding          : 0;
   background-color : white;
   font-size        : 10pt;
+  color: #000;
 }
 
-#home-page {
-  margin : 65px 10px 10px 30px;
-}
+@import "pages/home_page";
 
 #header-page {
   margin : 65px 5px 15px 35px;
